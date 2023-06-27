@@ -1,0 +1,18 @@
+spring:
+  application:
+    name: ems
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    password: root
+    url: jdbc:mysql://${MYSQL_HOST:localhost}:3306/ems?useSSL=false
+    username: root
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+
+logging:
+  level:
+    com.company.ems: TRACE
