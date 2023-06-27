@@ -12,7 +12,7 @@
     <artifactId>ems</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <name>ems</name>
-    <description>Demo project for Spring Boot</description>
+    <description>Basic CRUD project in Spring Boot for handling employees information</description>
     <properties>
         <java.version>11</java.version>
     </properties>
@@ -48,6 +48,11 @@
             <groupId>mysql</groupId>
             <artifactId>mysql-connector-java</artifactId>
             <version>8.0.33</version>
+        </dependency>
+        <dependency>
+            <groupId>org.springdoc</groupId>
+            <artifactId>springdoc-openapi-ui</artifactId>
+            <version>1.7.0</version>
         </dependency>
     </dependencies>
     <build>
