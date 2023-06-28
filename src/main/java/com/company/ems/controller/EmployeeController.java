@@ -28,7 +28,7 @@ public class EmployeeController {
         return ResponseEntity.ok("Employee created successfully with id = ".concat(id));
     }
 
-    @PostMapping(path = "batch/")
+    @PostMapping(path = "batch")
     ResponseEntity<String> createNewEmployeeBatch(@RequestBody List<EmployeeDTO> employeeDTOs) {
         List<Employee> employees = employeeDTOs.stream().map(employeeDTO -> (Employee) customModelMapper.map(employeeDTO, Employee.class)).collect(Collectors.toList());
         employeeService.createNewEmployeeBatch(employees);
